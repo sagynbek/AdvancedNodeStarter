@@ -17,13 +17,13 @@ test('The header has the correct text', async () => {
   expect(text).toEqual('Blogster');
 });
 
-test('Clicking login starts auth flow', async () => {
-  await page.click('.right a');
+// test('Clicking login starts auth flow', async () => {
+//   await page.click('.right a');
 
-  const url = await page.url();
+//   const url = await page.url();
 
-  expect(url).toMatch(/accounts\.google\.com/)
-});
+//   expect(url).toMatch(/accounts\.google\.com/)
+// });
 
 test('When signed in, shows logout button', async () => {
   await page.login();
